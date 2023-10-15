@@ -114,7 +114,7 @@ const Home: React.FC<Props> = ({ products }) => {
         {/* ===== Featured Products Section ===== */}
         <section className="app-max-width app-x-padding my-16 flex flex-col">
           <div className="text-center mb-6">
-            <h2 className="text-3xl">Dharmik Wear Collections</h2>
+            <h2 className="text-3xl">Sanatan Wear Collections</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 sm:gap-y-6 mb-10">
             {currentItems.map((item) => (

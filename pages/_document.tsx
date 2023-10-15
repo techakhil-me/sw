@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-const title = "Dharmik Wear";
+const title = "Sanatan Wear";
 const desc =
   "Elevate your everyday look with the grace of Hindu gods on your chest.";
 const keywords = "Tshirt, hindu, sanaatan, dharmik, wear, fashion";
