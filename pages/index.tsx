@@ -45,20 +45,6 @@ const Home: React.FC<Props> = ({ products }) => {
         {/* ===== Category Section ===== */}
         <section className="w-full h-auto py-10 border border-b-2 border-gray100">
           <div className="app-max-width app-x-padding h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="w-full sm:col-span-2 lg:col-span-2">
-              <OverlayContainer
-                imgSrc="/bg-img/banner_ram.png"
-                imgSrc2="/bg-img/banner_ram.png"
-                imgAlt="New Arrivals"
-              >
-                <LinkButton
-                  href="/category/214"
-                  extraClass="absolute bottom-10-per sm:right-10-per z-20"
-                >
-                  214 Collection
-                </LinkButton>
-              </OverlayContainer>
-            </div>
             <div className="w-full">
               <OverlayContainer
                 imgSrc="/bg-img/banner_2414.png"
