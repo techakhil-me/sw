@@ -21,7 +21,7 @@ const Card: FC<Props> = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isWLHovered, setIsWLHovered] = useState(false);
 
-  const { id, name, price, img1, img2 } = item;
+  const { id, name, price, img1, img2, original_price } = item;
 
   const itemLink = `/products/${encodeURIComponent(id)}`;
 
@@ -83,7 +83,7 @@ const Card: FC<Props> = ({ item }) => {
         <Link href={itemLink}>
           <a className={styles.itemName}>{name}</a>
         </Link>
-        <div className="text-gray400">Rs {price}</div>
+        <div className="text-gray400"><span className="line-through">Rs {original_price}</span> {">"} Rs {price}</div>
         <button
           type="button"
           onClick={() => addOne!(item)}

@@ -44,7 +44,7 @@ const Home: React.FC<Props> = ({ products }) => {
       <main id="main-content" className="-mt-20">
         {/* ===== Category Section ===== */}
         <section className="w-full h-auto py-10 border border-b-2 border-gray100">
-          <div className="app-max-width app-x-padding h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="app-max-width app-x-padding h-full flex gap-4">
            
             <div className="w-full">
               <OverlayContainer
@@ -55,10 +55,11 @@ const Home: React.FC<Props> = ({ products }) => {
                   href="/category/gold"
                   extraClass="absolute bottom-10-per z-20"
                 >
-                  2414 Collection
+                  Gold Collection
                 </LinkButton>
               </OverlayContainer>
             </div>
+
             <div className="w-full">
               <OverlayContainer
                 imgSrc="/bg-img/banner_diamond.png"

@@ -137,15 +137,18 @@ export default function Footer() {
             <span className="hidden sm:block">
               Follow us on Social
             </span>{" "}
-            <a
+            {/* <a
               href="www.facebook.com"
               aria-label="Facebook Page for Sanatan wear"
             >
               <FacebookLogo />
-            </a>
+            </a> */}
             <a
-              href="www.ig.com"
+              href="https://instagram.com/sanatanwear"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram Account for Sanatan wear"
+              className="scale-150 transform"
             >
               <InstagramLogo />
             </a>

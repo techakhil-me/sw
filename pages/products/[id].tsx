@@ -243,7 +243,7 @@ const Product: React.FC<Props> = () => {
               </div>)}
               
              
-            </div>
+            </div> 
             <span className="mb-2">
               size: {size}
             </span>
