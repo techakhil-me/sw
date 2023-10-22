@@ -152,7 +152,7 @@ const Product: React.FC<Props> = () => {
                 height={1282}
                 objectFit='cover'
               />
-              <Image
+              {/* <Image
                 className={`cursor-pointer ${mainImg === product.img3
                     ? "opacity-100 border border-gray300"
                     : "opacity-50"
@@ -163,7 +163,7 @@ const Product: React.FC<Props> = () => {
                 width={1000}
                 height={1282}
                 objectFit='cover'
-              />
+              /> */}
             </div>
             <div className="w-full sm:w-3/4 h-full m-0 sm:m-4">
               <Swiper
@@ -195,7 +195,7 @@ const Product: React.FC<Props> = () => {
                     objectFit='cover'
                   />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                   <Image
                     className="each-slide w-full"
                     src={product.img3 as string}
@@ -204,7 +204,7 @@ const Product: React.FC<Props> = () => {
                     alt={product.name}
                     objectFit='cover'
                   />
-                </SwiperSlide>
+                </SwiperSlide> */}
               </Swiper>
               <div className="hidden sm:block h-full">
                 <Image
