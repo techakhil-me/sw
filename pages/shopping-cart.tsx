@@ -33,7 +33,7 @@ const ShoppingCart = () => {
   return (
     <div>
       {/* ===== Head Section ===== */}
-      <Header title={`Shopping Cart - Haru Fashion`} />
+      <Header title={`Shopping Cart - Sanatan wear`} />
 
       <main id="main-content">
         {/* ===== Heading & Continue Shopping */}

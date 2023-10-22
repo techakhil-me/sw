@@ -4,32 +4,32 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Haru Fashion ",
-  "short_name": "Haru",
-  "description": "Discover affordable and fashionable men's and women's clothing online at Haru Fashion",
+  "name": "Sanatan Wear",
+  "short_name": "Sanatan Wear",
+  "description": "Sanatan Wear is a clothing brand that is inspired by the Sanatan Dharma.",
   "icons": [
     {
-      "src": "/icon-192x192.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icon-256x256.png",
+      "src": "/logo.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "/icon-384x384.png",
+      "src": "/logo.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/maskable_icon.png",
+      "src": "/logo.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"

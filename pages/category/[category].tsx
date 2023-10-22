@@ -35,7 +35,7 @@ const ProductCategory: React.FC<Props> = () => {
   return (
     <div>
       {/* ===== Head Section ===== */}
-      <Header title={`${category} - Haru Fashion`} />
+      <Header title={`${category} - Sanatan wear`} />
 
       <main id="main-content">
         {/* ===== Breadcrumb Section ===== */}

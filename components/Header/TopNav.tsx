@@ -45,12 +45,12 @@ const TopNav = () => {
       <div className="flex justify-between app-max-width">
         <ul className={`flex ${styles.topLeftMenu}`}>
           <li>
-            <a href="#" aria-label="Haru Fashion Facebook Page">
+            <a href="#" aria-label="Sanatan wear Facebook Page">
               <FacebookLogo />
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Haru Fashion Instagram Account">
+            <a href="#" aria-label="Sanatan wear Instagram Account">
               <InstagramLogo />
             </a>
           </li>

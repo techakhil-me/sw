@@ -7,7 +7,7 @@ type Props = {
   keywords?: string;
 };
 
-// "Discover affordable and fashionable men's and women's clothing online at Haru Fashion. Free Returns ✓ 1000+ New Arrivals Dropped Daily."
+// "Discover affordable and fashionable men's and women's clothing online at Sanatan wear. Free Returns ✓ 1000+ New Arrivals Dropped Daily."
 const defaultDesc =
   "Wear your faith with pride. Elevate your everyday look with the grace of Hindu gods on your chest.";
 const defaultKeywords =

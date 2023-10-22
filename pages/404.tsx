@@ -9,7 +9,7 @@ const Custom404 = () => {
   // const t = useTranslations("Others");
   return (
     <>
-      <AppHeader title="Page Not Found - Haru Fashion" />
+      <AppHeader title="Page Not Found - Sanatan wear" />
       <div className="flex flex-col h-screen justify-center items-center">
         <h1 className="text-2xl">Page not found</h1>
         <Image

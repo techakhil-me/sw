@@ -45,13 +45,14 @@ const Home: React.FC<Props> = ({ products }) => {
         {/* ===== Category Section ===== */}
         <section className="w-full h-auto py-10 border border-b-2 border-gray100">
           <div className="app-max-width app-x-padding h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+           
             <div className="w-full">
               <OverlayContainer
-                imgSrc="/bg-img/banner_2414.png"
-                imgAlt="2414"
+                imgSrc="/bg-img/banner_gold.png"
+                imgAlt="gold"
               >
                 <LinkButton
-                  href="/category/214"
+                  href="/category/gold"
                   extraClass="absolute bottom-10-per z-20"
                 >
                   2414 Collection
@@ -86,8 +87,8 @@ const Home: React.FC<Props> = ({ products }) => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-12 gap-y-6 mb-10 app-x-padding">
           <Card key={currentItems[1-1].id} item={currentItems[1-1]} />
           <Card key={currentItems[4-1].id} item={currentItems[4-1]} />
-          <Card key={currentItems[9-1].id} item={currentItems[9-1]} />
-          <Card key={currentItems[10-1].id} item={currentItems[10-1]} />
+          <Card key={currentItems[6-1].id} item={currentItems[6-1]} />
+          <Card key={currentItems[8-1].id} item={currentItems[8-1]} />
           </div>
         </section>
 

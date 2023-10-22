@@ -139,13 +139,13 @@ export default function Footer() {
             </span>{" "}
             <a
               href="www.facebook.com"
-              aria-label="Facebook Page for Haru Fashion"
+              aria-label="Facebook Page for Sanatan wear"
             >
               <FacebookLogo />
             </a>
             <a
               href="www.ig.com"
-              aria-label="Instagram Account for Haru Fashion"
+              aria-label="Instagram Account for Sanatan wear"
             >
               <InstagramLogo />
             </a>
