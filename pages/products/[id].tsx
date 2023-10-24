@@ -49,7 +49,7 @@ const Product: React.FC<Props> = () => {
     img2: "https://drive.google.com/uc?id=1nw-qOfaAslo6rpEXTKyB0R7aVRZlJmuE",
     img3: "https://drive.google.com/uc?id=1nw-qOfaAslo6rpEXTKyB0R7aVRZlJmuE",
     categoryName: "214",
-    colors:["black"]
+    colors: ["black"]
   };
 
 
@@ -91,7 +91,7 @@ const Product: React.FC<Props> = () => {
     ...product,
     qty: currentQty,
     size: size,
-    color:color,
+    color: color,
   };
 
   const handleWishlist = () => {
@@ -104,7 +104,7 @@ const Product: React.FC<Props> = () => {
     <div>
       {/* ===== Head Section ===== */}
       <Header title={`${product.name} - Sanatan wear`} />
-   
+
       <main id="main-content">
         {/* ===== Breadcrumb Section ===== */}
         <div className="bg-lightgreen h-16 w-full flex items-center border-t-2 border-gray200">
@@ -129,8 +129,8 @@ const Product: React.FC<Props> = () => {
             <div className="hidden sm:block w-full sm:w-1/4 h-full space-y-4 my-4">
               <Image
                 className={`cursor-pointer ${mainImg === product.img1
-                    ? "opacity-100 border border-gray300 h-72 2-56"
-                    : "opacity-50 h-72 2-56"
+                  ? "opacity-100 border border-gray300 h-72 2-56"
+                  : "opacity-50 h-72 2-56"
                   }`}
                 onClick={() => setMainImg(product.img1)}
                 src={product.img1 as string}
@@ -142,8 +142,8 @@ const Product: React.FC<Props> = () => {
               />
               <Image
                 className={`cursor-pointer ${mainImg === product.img2
-                    ? "opacity-100 border border-gray300"
-                    : "opacity-50"
+                  ? "opacity-100 border border-gray300"
+                  : "opacity-50"
                   }`}
                 onClick={() => setMainImg(product.img2)}
                 src={product.img2 as string}
@@ -213,7 +213,7 @@ const Product: React.FC<Props> = () => {
                   width={1000}
                   height={1282}
                   alt={product.name}
-                  objectFit={mainImg===product.img3 ? 'contain' : 'cover'}
+                  objectFit={mainImg === product.img3 ? 'contain' : 'cover'}
                 />
               </div>
             </div>
@@ -231,19 +231,19 @@ const Product: React.FC<Props> = () => {
               color: {color}
             </span>
             <div className="sizeContainer flex space-x-4 text-sm mb-4">
-              {product?.colors?.map((col,i)=><div
-              key={`color-${i}`}
+              {product?.colors?.map((col, i) => <div
+                key={`color-${i}`}
                 onClick={() => handleColor(col)}
                 className={`px-2 h-8 flex items-center justify-center border ${color === col
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 {col}
               </div>)}
-              
-             
-            </div> 
+
+
+            </div>
             <span className="mb-2">
               size: {size}
             </span>
@@ -251,8 +251,8 @@ const Product: React.FC<Props> = () => {
               <div
                 onClick={() => handleSize("S")}
                 className={`w-8 h-8 flex items-center justify-center border ${size === "S"
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 S
@@ -260,8 +260,8 @@ const Product: React.FC<Props> = () => {
               <div
                 onClick={() => handleSize("M")}
                 className={`w-8 h-8 flex items-center justify-center border ${size === "M"
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 M
@@ -269,8 +269,8 @@ const Product: React.FC<Props> = () => {
               <div
                 onClick={() => handleSize("L")}
                 className={`w-8 h-8 flex items-center justify-center border ${size === "L"
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 L
@@ -278,8 +278,8 @@ const Product: React.FC<Props> = () => {
               <div
                 onClick={() => handleSize("XL")}
                 className={`w-8 h-8 flex items-center justify-center border ${size === "XL"
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 XL
@@ -287,8 +287,8 @@ const Product: React.FC<Props> = () => {
               <div
                 onClick={() => handleSize("XXL")}
                 className={`w-8 h-8 flex items-center justify-center border ${size === "XXL"
-                    ? "border-gray500"
-                    : "border-gray300 text-gray400"
+                  ? "border-gray500"
+                  : "border-gray300 text-gray400"
                   } cursor-pointer hover:bg-gray500 hover:text-gray100`}
               >
                 XXL
@@ -320,7 +320,7 @@ const Product: React.FC<Props> = () => {
                   extraClass={`flex-grow text-center whitespace-nowrap`}
                   onClick={() => addItem!(currentItem)}
                 />
-         
+
                 <GhostButton onClick={handleWishlist}>
                   {alreadyWishlisted ? (
                     <HeartSolid extraClass="inline" />
@@ -350,8 +350,8 @@ const Product: React.FC<Props> = () => {
             </Disclosure>
             <div className="flex items-center space-x-4 mt-4">
               <span>share</span>
-              <FacebookLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500" />
-              <InstagramLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500" />
+              <a href="https://www.instagram.com/sanatanwear/" target="_blank" rel='noreferrer'>
+                <InstagramLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500" /></a>
             </div>
           </div>
         </div>

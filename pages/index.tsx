@@ -25,7 +25,7 @@ const Home: React.FC<Props> = ({ products }) => {
   // const [currentItems, setCurrentItems] = useState(products);
   const [isFetching, setIsFetching] = useState(false);
 
- 
+
   const handleSeemore = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
@@ -45,37 +45,41 @@ const Home: React.FC<Props> = ({ products }) => {
         {/* ===== Category Section ===== */}
         <section className="w-full h-auto py-10 border border-b-2 border-gray100">
           <div className="app-max-width app-x-padding h-full flex gap-4">
-           
+
             <div className="w-full">
               <OverlayContainer
-                imgSrc="/bg-img/banner_gold.png"
-                imgAlt="gold"
+                imgSrc="/bg-img/banner_standard.png"
+                imgAlt="standard"
               >
                 <LinkButton
-                  href="/category/gold"
+                  href="/category/standard"
                   extraClass="absolute bottom-10-per z-20"
                 >
-                  Gold Collection
+                  Standard Collection
                 </LinkButton>
               </OverlayContainer>
             </div>
 
             <div className="w-full">
               <OverlayContainer
-                imgSrc="/bg-img/banner_diamond.png"
+                imgSrc="/bg-img/banner_premium.png"
                 // imgSrc2="/bg-img/banner_diamond.png"
-                imgAlt="diamond Collection"
+                imgAlt="premium Collection"
               >
                 <LinkButton
-                  href="/category/diamond"
+                  href="/category/premium"
                   extraClass="absolute bottom-10-per z-20"
                 >
-                 Diamond Collection
+                  Premium Collection
                 </LinkButton>
               </OverlayContainer>
             </div>
           </div>
         </section>
+
+
+
+
 
         {/* ===== Best Selling Section ===== */}
         <section className="app-max-width w-full h-full flex flex-col justify-center mt-16 mb-20">
@@ -86,10 +90,10 @@ const Home: React.FC<Props> = ({ products }) => {
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-12 gap-y-6 mb-10 app-x-padding">
-          <Card key={currentItems[1-1].id} item={currentItems[1-1]} />
-          <Card key={currentItems[4-1].id} item={currentItems[4-1]} />
-          <Card key={currentItems[6-1].id} item={currentItems[6-1]} />
-          <Card key={currentItems[8-1].id} item={currentItems[8-1]} />
+            <Card key={currentItems[1 - 1].id} item={currentItems[1 - 1]} />
+            <Card key={currentItems[4 - 1].id} item={currentItems[4 - 1]} />
+            <Card key={currentItems[6 - 1].id} item={currentItems[6 - 1]} />
+            <Card key={currentItems[8 - 1].id} item={currentItems[8 - 1]} />
           </div>
         </section>
 
@@ -98,6 +102,10 @@ const Home: React.FC<Props> = ({ products }) => {
           <h2 className="text-3xl">Testimonial</h2>
           <TestiSlider />
         </section> */}
+
+        <section className="app-max-width w-full h-full flex flex-col justify-center mt-16 mb-20">
+          <img src="/rakesh.png" alt="" />
+        </section>
 
         {/* ===== Featured Products Section ===== */}
         <section className="app-max-width app-x-padding my-16 flex flex-col">

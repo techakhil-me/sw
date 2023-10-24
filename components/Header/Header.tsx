@@ -95,13 +95,13 @@ const Header: React.FC<Props> = ({ title }) => {
             <ul className={`flex-0 lg:flex-1 flex -mt-4 ${styles.leftMenu}`}>
              
               <li>
-                <Link href="/category/diamond">
-                  <a><img className="h-14" src="/diamond.png" alt="diamond" /></a>
+                <Link href="/category/standard">
+                  <a><img className="h-14" src="/standard.png" alt="standard" /></a>
                 </Link>
               </li>
               <li>
-                <Link href="/category/gold">
-                  <a><img className="h-14" src="/gold.png" alt="gold" /></a>
+                <Link href="/category/premium">
+                  <a><img className="h-14" src="/premium.png" alt="premium" /></a>
                 </Link>
               </li>
 

@@ -123,20 +123,21 @@ export default function Menu() {
                       />
                     </form> */}
                    
-                    <Link href="/category/diamond">
+                    <Link href="/category/standard">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                       diamond
+                       <img className="h-14" src="/standard.png" alt="standard" />
                       </a>
                     </Link>
-                    <Link href="/category/gold">
+                    <Link href="/category/premium">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        gold
+                        <img className="h-14" src="/premium.png" alt="premium" />
+                     
                       </a>
                     </Link>
                     {/* <Link href="/about">
@@ -271,15 +272,17 @@ export default function Menu() {
                     </HMenu> */}
 
                     <div className="flex my-10 w-2/5 space-x-6 justify-center">
-                      <a
+                      {/* <a
                         href="#"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
                         aria-label="Sanatan wear Facebook Page"
                       >
                         <FacebookLogo extraClass="h-8" />
-                      </a>
+                      </a> */}
                       <a
-                        href="#"
+                        href="https://www.instagram.com/sanatanwear/"
+                        target="_blank"
+                        rel="noreferrer"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
                         aria-label="Sanatan wear Facebook Page"
                       >
