@@ -11,7 +11,7 @@ import { useCart } from "../../context/cart/CartProvider";
 import { useWishlist } from "../../context/wishlist/WishlistProvider";
 
 type Props = {
-  item: itemType;
+  item: itemType & {original_price: number};
 };
 
 const Card: FC<Props> = ({ item }) => {

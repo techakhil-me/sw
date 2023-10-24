@@ -108,7 +108,7 @@ const Header: React.FC<Props> = ({ title }) => {
             </ul>
 
             {/* brand Logo */}
-            <div className="flex-1 flex justify-center items-center cursor-pointer">
+            {/* <div className="flex-1 flex justify-center items-center cursor-pointer">
               <div className="w-32 h-auto">
                 <Link href="/">
                   <a>
@@ -123,7 +123,7 @@ const Header: React.FC<Props> = ({ title }) => {
                   </a>
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             {/* Right Nav */}
             <ul className={`flex-1 flex justify-end ${styles.rightMenu}`}>
