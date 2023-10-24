@@ -35,6 +35,7 @@ export interface itemType extends commonType {
   size?:string;
   color?:string;
   colors?: string[];
+  original_price?: number;
 }
 
 export interface apiProductsType extends commonType {
