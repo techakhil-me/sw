@@ -12,13 +12,14 @@ import { useWishlist } from "../../context/wishlist/WishlistProvider";
 
 type Props = {
   item: itemType;
+  colcase?: boolean;
 };
 
-const Card: FC<Props> = ({ item }) => {
+const Card: FC<Props> = ({ item, colcase = false }) => {
   // const t = useTranslations("CartWishlist");
   const { wishlist, addToWishlist, deleteWishlistItem } = useWishlist();
   const { addOne } = useCart();
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(colcase ? true : false);
   const [isWLHovered, setIsWLHovered] = useState(false);
 
   const { id, name, price, img1, img2, original_price } = item;
@@ -38,8 +39,8 @@ const Card: FC<Props> = ({ item }) => {
         <Link href={itemLink}>
           <a
             tabIndex={-1}
-            onMouseOver={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseOver={() => setIsHovered(!colcase)}
+            onMouseLeave={() => setIsHovered(colcase)}
             className="flex relative h-72 w-full items-center justify-center"
           >
             {!isHovered && (

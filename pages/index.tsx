@@ -90,10 +90,10 @@ const Home: React.FC<Props> = ({ products }) => {
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-12 gap-y-6 mb-10 app-x-padding">
-            <Card key={currentItems[1 - 1].id} item={currentItems[1 - 1]} />
-            <Card key={currentItems[4 - 1].id} item={currentItems[4 - 1]} />
-            <Card key={currentItems[6 - 1].id} item={currentItems[6 - 1]} />
-            <Card key={currentItems[8 - 1].id} item={currentItems[8 - 1]} />
+            <Card key={currentItems[1 - 1].id} item={currentItems[1 - 1]}  colcase={false} />
+            <Card key={currentItems[4 - 1].id} item={currentItems[4 - 1]}  colcase={true}/>
+            <Card key={currentItems[6 - 1].id} item={currentItems[6 - 1]}  colcase={false}/>
+            <Card key={currentItems[8 - 1].id} item={currentItems[8 - 1]}  colcase={true} />
           </div>
         </section>
 
@@ -113,8 +113,8 @@ const Home: React.FC<Props> = ({ products }) => {
             <h2 className="text-3xl">Sanatan Wear Collections</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 sm:gap-y-6 mb-10">
-            {currentItems.map((item) => (
-              <Card key={item.id} item={item} />
+            {currentItems.map((item,i) => (
+              <Card key={item.id} item={item} colcase={i%2? true:false} />
             ))}
           </div>
           {/* <div className="flex justify-center">
