@@ -86,7 +86,7 @@ const Home: React.FC<Props> = ({ products }) => {
           <div className="flex justify-center">
             <div className="w-3/4 sm:w-1/2 md:w-1/3 text-center mb-8">
               <h2 className="text-3xl mb-4">Best Selling</h2>
-              <span>Elevate your everyday look with the grace of Hindu gods on your chest</span>
+              <span>Feel the blessings of Real super Heroes of universe and wear them proudly on your chest</span>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-12 gap-y-6 mb-10 app-x-padding">
@@ -111,6 +111,7 @@ const Home: React.FC<Props> = ({ products }) => {
         <section className="app-max-width app-x-padding my-16 flex flex-col">
           <div className="text-center mb-6">
             <h2 className="text-3xl">Sanatan Wear Collections</h2>
+            <span>A brand by Rakesh Sinha</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 sm:gap-y-6 mb-10">
             {currentItems.map((item,i) => (
