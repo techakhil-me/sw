@@ -313,12 +313,20 @@ const Product: React.FC<Props> = () => {
                   +
                 </div>
               </div>
-              <div className="flex h-12 space-x-4 w-full">
-                <Button
-                  value={"add to cart"}
+              <div className="flex h-12 gap-4">
+                <GhostButton
+                  
                   size="lg"
-                  extraClass={`flex-grow text-center whitespace-nowrap`}
+                  extraClass={`text-center whitespace-nowrap`}
                   onClick={() => addItem!(currentItem)}
+                  >add to cart</GhostButton>
+               
+                 <Button
+                  value={"Buy Now"}
+                  size="lg"
+                  extraClass={`items-center text-center whitespace-nowrap`}
+                  onClick={() => {addItem!(currentItem)
+                    router.push('/shopping-cart');}}
                 />
 
                 <GhostButton onClick={handleWishlist}>

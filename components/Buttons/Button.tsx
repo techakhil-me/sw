@@ -31,13 +31,13 @@ const Button: FC<Props> = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`text-xl sm:text-base flex items-center justify-center ${btnSize} border border-gray500 ${
+      className={`text-xl sm:text-base flex items-center justify-center text-center ${btnSize} border border-gray500 ${
         disabled
           ? "bg-gray400 text-gray300 cursor-not-allowed"
           : "bg-gray500 text-gray100 hover:text-gray300"
       } ${extraClass}`}
     >
-      {value} <span className="ml-4">{children}</span>
+      {value} {children&& <span className="ml-4">{children}</span>}
     </button>
   );
 };
