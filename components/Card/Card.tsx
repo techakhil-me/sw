@@ -76,7 +76,7 @@ const Card: FC<Props> = ({ item, colcase = false }) => {
           onClick={() => addOne!(item)}
           className={styles.addBtn}
         >
-          Add to cart
+          View Details
         </button>
       </div>
 
