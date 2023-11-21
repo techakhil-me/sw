@@ -71,13 +71,13 @@ const Card: FC<Props> = ({ item, colcase = false }) => {
         >
           {isWLHovered || alreadyWishlisted ? <HeartSolid /> : <Heart />}
         </button>
-        <button
+        <Link href={itemLink}><button
           type="button"
-          onClick={() => addOne!(item)}
+          // onClick={() => addOne!(item)}
           className={styles.addBtn}
         >
           View Details
-        </button>
+        </button></Link>
       </div>
 
       <div className="content">
